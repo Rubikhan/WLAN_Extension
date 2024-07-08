@@ -1,4 +1,22 @@
-p {
-	font-size: 20pt;
+p:first-child {
+	font-size: 24pt;
+	font-weight: bold;
+	padding: 1em;
+}
+p{
+	font-size: 18pt;
 	overflow-wrap: break-word;
+	padding: 1em;
+	margin: 0;
+}
+p:nth-child(2n){
+	background-color: #424242;
+	padding: 1em;
+}
+p:active{
+	background-color: #777;
+}
+body{
+	background-color: #020202;
+	color: white;
 }

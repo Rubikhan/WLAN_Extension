@@ -4,8 +4,10 @@ I sometimes play VNs on my TV and looking up unknown words is annoying to write 
 # How to install & use
 
 1. Download [Textractor](https://github.com/Artikash/Textractor)
-2. Download [node.js](https://nodejs.org/en/download/)
-3. Download the [latest release](https://github.com/quijotez/Textractor-PasteToLocalhost/releases/latest) and drop it into the main Textractor folder (if there are issues you can try and build it)
+2. Install node (if it isn't already) [node.js](https://nodejs.org/en/download/)
+3. Build the x64 and/or the x86 with the Visual Studio .sln file
+   a. Be sure to use the Debug build and not the Release build option
+   b. Textractor will expect the dll to have a ".xdll" extension, so rename it upon a successful build
 
 ![1](/pictures/1.png)
 

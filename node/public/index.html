@@ -1,76 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
-	<script src="js/copyToClipboard.js"></script>
-	<title>Textractor - Paste to Localhost</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>Textractor - WLAN Extension</title>
 </head>
 <body>
-    <div class="translation-controls">
-		<button onclick="translateCurrentLine(1, 'clawdy');">CLAWDY Translate (1 line)</button>
-		<button onclick="translateCurrentLine(2, 'clawdy');">CLAWDY Translate (2 lines)</button>
-		<button onclick="translateCurrentLine(3, 'clawdy');">CLAWDY Translate (3 lines)</button>
-		<button onclick="translateCurrentLine(4, 'clawdy');">CLAWDY Translate (4 lines)</button>
-		<button onclick="translateCurrentLine(5, 'clawdy');">CLAWDY Translate (5 lines)</button>
-		<label for="autoTranslateToggle">Auto Translate:</label>
-		<input type="checkbox" id="autoTranslateToggle" onchange="toggleAutoTranslate();">
-    </div>
-	<div class="translation-controls">
-		<button onclick="translateCurrentLine(1, 'geepeetee4');">GEEPEE Translate (1 line)</button>
-		<button onclick="translateCurrentLine(2, 'geepeetee4');">GEEPEE Translate (2 lines)</button>
-		<button onclick="translateCurrentLine(3, 'geepeetee4');">GEEPEE Translate (3 lines)</button>
-		<button onclick="translateCurrentLine(4, 'geepeetee4');">GEEPEE Translate (4 lines)</button>
-		<button onclick="translateCurrentLine(5, 'geepeetee4');">GEEPEE Translate (5 lines)</button>
-    </div>
-	<div class="line-container">
-	<p onclick="copyToClipboard();" id="line1"></p>
-			<button onclick="copyToClipboardFoo();">Copy のだ</button>
-		<button onclick="copyToClipboardBar();">Copy なのだ</button>
-		<p id="translation1"></p>
-	</div>
-	<div class="line-container">
-	<p onclick="copyToClipboard();" id="line2"></p>
-			<button onclick="copyToClipboardFoo();">Copy のだ</button>
-		<button onclick="copyToClipboardBar();">Copy なのだ</button>
-		<p id="translation2"></p>
-	</div>
-	<div class="line-container">
-	<p onclick="copyToClipboard();" id="line3"></p>
-			<button onclick="copyToClipboardFoo();">Copy のだ</button>
-		<button onclick="copyToClipboardBar();">Copy なのだ</button>
-	<p id="translation3"></p>
-	</div>
-	<p onclick="copyToClipboard();" id="line4"></p>
-		<p id="translation4"></p>
-	<p onclick="copyToClipboard();" id="line5"></p>
-		<p id="translation5"></p>
-	<p onclick="copyToClipboard();" id="line6"></p>
-	<p id="translation6"></p>
-	<p onclick="copyToClipboard();" id="line7"></p>
-	<p id="translation7"></p>
-	<p onclick="copyToClipboard();" id="line8"></p>
-	<p id="translation8"></p>
-	<p onclick="copyToClipboard();" id="line9"></p>
-	<p id="translation9"></p>
-	<p onclick="copyToClipboard();" id="line10"></p>
-	<p id="translation10"></p>
-	<p onclick="copyToClipboard();" id="line11"></p>
-	<p id="translation11"></p>
-	<p onclick="copyToClipboard();" id="line12"></p>
-	<p id="translation12"></p>
-	<p onclick="copyToClipboard();" id="line13"></p>
-	<p id="translation13"></p>
-	<p onclick="copyToClipboard();" id="line14"></p>
-	<p id="translation14"></p>
-	<p onclick="copyToClipboard();" id="line15"></p>
-	<p id="translation15"></p>
-	<p onclick="copyToClipboard();" id="line16"></p>
-	<p id="translation16"></p>
-	<p onclick="copyToClipboard();" id="line17"></p>
-	<p id="translation17"></p>
-	<p onclick="copyToClipboard();" id="line18"></p>	
-	<p id="translation18"></p>
+    <div id="translation-container"></div>
 </body>
 </html>

@@ -1,22 +1,91 @@
-p:first-child {
-	font-size: 24pt;
-	font-weight: bold;
-	padding: 1em;
+body {
+    background-color: #020202;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-p{
-	font-size: 18pt;
-	overflow-wrap: break-word;
-	padding: 1em;
-	margin: 0;
+
+.line-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2e2e2e;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
 }
-p:nth-child(2n){
-	background-color: #424242;
-	padding: 1em;
+
+.line-container.copied {
+    background-color: #444;
 }
-p:active{
-	background-color: #777;
+
+.line-container p {
+    font-size: 18pt;
+    overflow-wrap: break-word;
+    margin: 5px 0;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-body{
-	background-color: #020202;
-	color: white;
+
+.line-container p:active {
+    background-color: #777;
+}
+
+.line-container .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.line-container button {
+    font-size: 14pt;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.line-container button:hover {
+    opacity: 0.8;
+}
+
+.line-container button:nth-child(1) {
+    background-color: #4CAF50; /* Green */
+}
+
+.line-container button:nth-child(2) {
+    background-color: #2196F3; /* Blue */
+}
+
+.line-container button:nth-child(3) {
+    background-color: #FF9800; /* Orange for GPT */
+}
+
+.line-container button:nth-child(4) {
+    background-color: #E91E63; /* Pink for Claude */
+}
+
+@media (max-width: 600px) {
+    .line-container {
+        font-size: 16pt;
+    }
+
+    .line-container button {
+        font-size: 12pt;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 601px) {
+    .line-container .buttons {
+        flex-direction: row; /* Horizontal layout for wide viewports */
+    }
 }
